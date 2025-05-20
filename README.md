@@ -1,14 +1,33 @@
-# ⏰ ClockType - C++ Header File
+# ⏰ ClockType - C++ Time Management Class
 
-A lightweight and reusable C++ class for managing and displaying time in hour-minute-second format.
+`ClockType` is a simple, object-oriented C++ class for handling and displaying time in `HH:MM:SS` format. Ideal for learning class design, constructors, encapsulation, and operator overloading.
 
+---
 
-## 🛠️ Features
+## 📁 File Overview
 
-- Set time manually
+- `ClockType.h` – Class declaration
+- `ClockType.cpp` – Class implementation (if separated)
+- `main.cpp` – Example usage (optional/demo)
+
+---
+
+## ⚙️ Features
+
+- Set custom time
+- Get individual time components
 - Increment seconds, minutes, or hours
-- Compare two time values
-- Display time in HH:MM:SS format
+- Compare two clocks
+- Print time using either a method or `<<` operator
+
+---
+
+## 🛠️ Requirements
+
+- C++11 or later
+- Any C++ compiler (e.g. `g++`, `clang++`, `MSVC`)
+
+---
 
 ## 🧠 Usage
 
@@ -20,15 +39,8 @@ A lightweight and reusable C++ class for managing and displaying time in hour-mi
 ClockType myClock;
 myClock.setTime(10, 25, 45);
 myClock.printTime(); // Output: 10:25:45
-
-or
-
-ClockType myClock(10, 25, 45);
-cout << myClock << endl; // Output: 10,25,45
 ```
-
-
----
-
-Let me know if you want a `main.cpp` example to go with it!
-
+```cpp
+ClockType myClock(10, 25, 45);
+std::cout << myClock << std::endl; // Output: 10:25:45
+```
